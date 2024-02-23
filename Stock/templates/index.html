@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Stock Price Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #stockInput { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Real-time Stock Price Tracking</h1>
+    <form id="stockForm">
+        <input type="text" id="stockInput" placeholder="Enter a ticker symbol, e.g. TSLA">
+        <button type="submit">Check price</button>
+    </form>
+    <div id="priceDisplay"></div>
+    <canvas id="stockChart" width="400" height="400"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../app.js"></script>
+</body>
+</html>
